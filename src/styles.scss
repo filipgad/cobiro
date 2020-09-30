@@ -1,0 +1,16 @@
+@import './styles/reset';
+
+:root {
+  --main-color: #17475e;
+  --second-color: #4e6f80;
+  --third-color: #42c5f5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}

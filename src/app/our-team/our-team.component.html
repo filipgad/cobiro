@@ -1,0 +1,8 @@
+<h1>{{ourTeamData.title}}</h1>
+<div class="container">
+  <app-team-member *ngFor="let member of ourTeamData.members"
+                   [memberKey]="member.memberKey"
+                   [memberAvatar]="member.memberAvatar"
+                   [memberData]="member.memberData"
+  ></app-team-member>
+</div>

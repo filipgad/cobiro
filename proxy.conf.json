@@ -1,0 +1,10 @@
+{
+  "/cobiro-api": {
+    "target": "https://cobiro-website-builder.s3-eu-west-1.amazonaws.com/task/index.json",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "/cobiro-api": ""
+    }
+  }
+}

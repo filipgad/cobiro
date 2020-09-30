@@ -1,0 +1,55 @@
+.member-container {
+  margin: 0 10px 25px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+    &.first {
+      object-position: top center;
+    }
+  }
+
+  .member-data-container {
+    margin-left: 25px;
+
+    .member-data {
+      margin-top: 20px;
+
+      p {
+        &.title {
+          font-weight: 700;
+          margin-bottom: 5px;
+          color: var(--main-color);
+        }
+
+        &.desc {
+          font-size: 14px;
+          color: var(--second-color);
+        }
+      }
+    }
+
+    .member-contact {
+      margin-top: 20px;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: var(--second-color);
+
+        &.mail {
+          font-size: 13px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: var(--third-color);
+        }
+
+        &.phone {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

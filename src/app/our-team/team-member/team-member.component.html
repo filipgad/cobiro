@@ -1,0 +1,13 @@
+<div class="member-container">
+  <img [src]="memberAvatar.getAvatar()" [ngClass]="memberKey" alt="member-avatar"/>
+  <div class="member-data-container">
+    <div class="member-data">
+      <p class="title">{{memberData.title}}</p>
+      <p class="desc">{{memberData.description}}</p>
+    </div>
+    <div class="member-contact">
+      <a class="mail" [href]="'mailto:'+memberData.link">{{memberData.link}}</a>
+      <a class="phone" [href]="'tel:'+memberData.text">{{memberData.text}}</a>
+    </div>
+  </div>
+</div>
