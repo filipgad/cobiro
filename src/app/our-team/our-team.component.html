@@ -1,8 +1,14 @@
-<h1>{{ourTeamData.title}}</h1>
-<div class="container">
-  <app-team-member *ngFor="let member of ourTeamData.members"
-                   [memberKey]="member.memberKey"
-                   [memberAvatar]="member.memberAvatar"
-                   [memberData]="member.memberData"
-  ></app-team-member>
-</div>
+<ng-container *ngIf="ourTeamData$ | async as ourTeamData">
+  <h1>{{ourTeamData.title}}</h1>
+  <div class="container">
+    <app-team-member *ngFor="let member of ourTeamData.members"
+                     [memberKey]="member.memberKey"
+                     [memberAvatar]="member.memberAvatar"
+                     [memberData]="member.memberData">
+      <div class="member-contact">
+        <a class="mail" [href]="'mailto:'+member.memberData.link">{{member.memberData.link}}</a>
+        <a class="phone" [href]="'tel:'+member.memberData.text">{{member.memberData.text}}</a>
+      </div>
+    </app-team-member>
+  </div>
+</ng-container>

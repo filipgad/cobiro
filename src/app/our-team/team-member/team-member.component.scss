@@ -17,38 +17,15 @@
     .member-data {
       margin-top: 20px;
 
-      p {
-        &.title {
-          font-weight: 700;
-          margin-bottom: 5px;
-          color: var(--main-color);
-        }
-
-        &.desc {
-          font-size: 14px;
-          color: var(--second-color);
-        }
+      .title {
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: var(--main-color);
       }
-    }
 
-    .member-contact {
-      margin-top: 20px;
-
-      a {
-        display: block;
-        text-decoration: none;
+      .desc {
+        font-size: 14px;
         color: var(--second-color);
-
-        &.mail {
-          font-size: 13px;
-          font-weight: 500;
-          margin-bottom: 5px;
-          color: var(--third-color);
-        }
-
-        &.phone {
-          font-size: 14px;
-        }
       }
     }
   }

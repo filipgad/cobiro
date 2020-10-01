@@ -14,4 +14,25 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  .member-contact {
+    margin-top: 20px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: var(--second-color);
+
+      &.mail {
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: var(--third-color);
+      }
+
+      &.phone {
+        font-size: 14px;
+      }
+    }
+  }
 }
