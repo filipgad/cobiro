@@ -9,18 +9,18 @@ import {OurTeamComponent} from './our-team/our-team.component';
 import {TeamMemberComponent} from './our-team/team-member/team-member.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    OurTeamComponent,
-    TeamMemberComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    HttpClientModule
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        OurTeamComponent,
+        TeamMemberComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        RouterModule,
+        HttpClientModule
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

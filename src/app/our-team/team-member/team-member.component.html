@@ -1,10 +1,10 @@
 <div class="member-container">
-  <img [src]="memberAvatar.getAvatar()" [ngClass]="memberKey" alt="member-avatar"/>
-  <div class="member-data-container">
-    <div class="member-data">
-      <h2 class="title">{{memberData.title}}</h2>
-      <p class="desc">{{memberData.description}}</p>
+    <img [ngClass]="memberKey" [src]="memberAvatar.getAvatar()" alt="member-avatar"/>
+    <div class="member-data-container">
+        <div class="member-data">
+            <h2 class="title">{{memberData.title}}</h2>
+            <p class="desc">{{memberData.description}}</p>
+        </div>
+        <ng-content></ng-content>
     </div>
-    <ng-content></ng-content>
-  </div>
 </div>
